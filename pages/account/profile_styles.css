@@ -1,0 +1,310 @@
+:root {
+    --text: #fff;
+    --background: #353535;
+    --accent: #7F10AB;
+    --accent-light: #c887e2;
+    --accent-background: #c887e2;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    background-color: var(--accent-light);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture svg {
+    width: 60px;
+    height: 60px;
+    fill: var(--text);
+}
+
+.profile-info h2 {
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    color: var(--background);
+}
+
+.profile-info p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--background);
+    opacity: 0.7;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accent-background);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.stat {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stat-value {
+    font-size: 25px;
+    font-weight: bold;
+    color: #6A0DAD;
+}
+
+.back-link {
+    color: var(--text);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.back-link:hover {
+    opacity: 1;
+}
+
+.recent-activity, .favorite-genres, .settings {
+    background-color: var(--accent-background);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+h3 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    color: var(--background);
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.song-item svg {
+    margin-right: 10px;
+}
+
+.song-info {
+    margin-left: 10px;
+}
+
+.genre-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.edit-button {
+    background: #353535;
+    fill: #353535;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover svg {
+    fill: var(--accent);
+}
+
+#genre-edit button {
+    padding: 10px 15px;
+    background-color: var(--accent);
+    color: var(--text);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#genre-edit button:hover {
+    opacity: 0.9;
+}
+
+.genre-item .remove-genre {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.edit-mode .genre-item .remove-genre {
+    display: inline;
+}
+
+.genre-item {
+    background-color: var(--accent);
+    color: var(--text);
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.edit-field {
+    margin-bottom: 10px;
+}
+
+.edit-field input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    background-color: var(--text);
+    color: var(--background);
+    font-size: 14px;
+}
+
+.edit-field input[type="text"]::placeholder {
+    color: var(--background);
+    opacity: 0.5;
+}
+
+.hidden {
+    display: none;
+}
+
+#edit-controls {
+    margin-top: 20px;
+    display: none;
+}
+
+.edit-mode #edit-controls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#edit-controls button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #A94CD6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#edit-controls button:hover {
+    border-color: white;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#username-edit {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    background-color: var(--text);
+    color: var(--background);
+    font-size: 14px;
+}
+
+#username-edit::placeholder {
+    color: var(--background);
+    opacity: 0.5;
+}
+
+.profile-picture-colors {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-picture-colors.hidden {
+    display: none !important;
+}
+
+.profile-color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.profile-color-option.selected {
+    border-color: white;
+}
+
+.sign-out-button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: var(--background);
+    color: var(--text);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.sign-out-button:hover {
+    opacity: 0.9;
+    background-color: var(--accent);
+}

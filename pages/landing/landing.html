@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ostinato</title>
+    <link rel="stylesheet" href="landing.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <img src="../../resources/ostinato-logo.svg" alt="Ostinato Logo" class="logo" />
+      <div class="login-x-join-button-wrapper">
+        <a id="profile-link" class="nav-link" href="../account/profile.html">profile</a>
+        <button class="login-button" type="button">
+          <span>login</span>
+        </button>
+        <a href="../../visualizer/index.html" target="_blank" rel="noopener" class="join-button">
+          <span>visualizer</span>
+        </a>
+      </div>
+    </div>
+
+    <div id="player-x-content-wrapper">
+      <div id="player-contents">
+        <div id="song-info-col">
+          <div id="spotify-embed-wrapper">
+            <img src="../../resources/defaultSong.jpg" alt="No song playing" id="placeholder-image" />
+          </div>
+          <div id="song-stats-wrapper">
+            <div id="song-stat-alignment">
+              <div class="stat-display">
+                <h2 class="stat-number" id="stat-queue">0</h2>
+                <p class="stat-label">In Queue</p>
+              </div>
+              <div class="stat-display">
+                <h2 class="stat-number" id="stat-messages">0</h2>
+                <p class="stat-label">Messages</p>
+              </div>
+              <div class="stat-display">
+                <h2 class="stat-number" id="stat-length">–</h2>
+                <p class="stat-label">Track Length</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="user-interactions-col">
+          <p id="backend-status" class="backend-status" hidden>
+            No backend found — chat and queue are only visible to you.
+          </p>
+          <div class="chat-wrapper">
+          </div>
+          <div class="chat-x-song-search-bar-wrapper">
+            <div class="chat-input-x-button-wrapper active">
+              <input type="text" class="chat-input" placeholder="chat..." maxlength="500" />
+              <button class="send-message" type="button" aria-label="Send message">
+                <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="inherit">
+                  <path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="toggle-input-bar" title="Search for a song">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                <path d="M400-120q-66 0-113-47t-47-113q0-66 47-113t113-47q23 0 42.5 5.5T480-418v-422h240v160H560v400q0 66-47 113t-113 47Z" />
+              </svg>
+            </div>
+          </div>
+
+          <div id="search-results" class="search-results"></div>
+        </div>
+      </div>
+
+      <div id="upcoming-songs-wrapper">
+        <h3>Queue</h3>
+        <div id="queue-wrapper">
+        </div>
+      </div>
+    </div>
+
+    <div id="playback-controls">
+      <button id="start-playback-button" type="button">Start Playback</button>
+    </div>
+
+    <script src="landing.js"></script>
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+  </body>
+</html>

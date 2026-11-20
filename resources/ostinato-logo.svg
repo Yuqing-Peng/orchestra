@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.33 173.71">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: ITCAvantGardePro-Bold, 'ITC Avant Garde Gothic Pro';
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: .1em;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(158.29 104.46)"><tspan x="0" y="0">n</tspan></text>
+  <text class="cls-2" transform="translate(0 103.72)"><tspan x="0" y="0">o</tspan></text>
+  <text class="cls-2" transform="translate(43.19 103.53)"><tspan x="0" y="0">s</tspan></text>
+  <text class="cls-2" transform="translate(87.19 104.53)"><tspan x="0" y="0">t</tspan></text>
+  <text class="cls-2" transform="translate(128.19 104.53)"><tspan x="0" y="0">i</tspan></text>
+  <text class="cls-2" transform="translate(245.04 104.14)"><tspan x="0" y="0">t</tspan></text>
+  <text class="cls-2" transform="translate(196.04 104.14)"><tspan x="0" y="0">a</tspan></text>
+  <text class="cls-2" transform="translate(278.04 103.14)"><tspan x="0" y="0">o</tspan></text>
+  <rect class="cls-1" x="158.01" y="111.28" width="30" height="15.5" rx="7.75" ry="7.75"/>
+  <rect class="cls-1" x="279.01" y="111.03" width="30" height="62" rx="8" ry="8"/>
+  <rect class="cls-1" x="239.01" y="111.78" width="30" height="46.5" rx="8" ry="8"/>
+  <rect class="cls-1" x="199.01" y="111.53" width="30" height="31" rx="8" ry="8"/>
+  <rect class="cls-1" x="119.12" y="111.96" width="30" height="15.5" rx="7.75" ry="7.75" transform="translate(268.24 239.42) rotate(-180)"/>
+  <rect class="cls-1" x=".12" y="111.71" width="30" height="62" rx="8" ry="8" transform="translate(30.24 285.42) rotate(180)"/>
+  <rect class="cls-1" x="40.12" y="111.46" width="30" height="46.5" rx="8" ry="8" transform="translate(110.24 269.42) rotate(180)"/>
+  <rect class="cls-1" x="80.12" y="111.21" width="30" height="31" rx="8" ry="8" transform="translate(190.24 253.42) rotate(180)"/>
+  <rect class="cls-1" x="158.48" y="46.93" width="30" height="15.5" rx="7.75" ry="7.75"/>
+  <rect class="cls-1" x="279.48" y=".68" width="30" height="62" rx="8" ry="8"/>
+  <rect class="cls-1" x="239.48" y="15.43" width="30" height="46.5" rx="8" ry="8"/>
+  <rect class="cls-1" x="199.48" y="31.18" width="30" height="31" rx="8" ry="8"/>
+  <rect class="cls-1" x="119.59" y="46.25" width="30" height="15.5" rx="7.75" ry="7.75" transform="translate(269.18 108) rotate(180)"/>
+  <rect class="cls-1" x=".59" y="0" width="30" height="62" rx="8" ry="8" transform="translate(31.18 62) rotate(-180)"/>
+  <rect class="cls-1" x="40.59" y="15.75" width="30" height="46.5" rx="8" ry="8" transform="translate(111.18 78) rotate(-180)"/>
+  <rect class="cls-1" x="80.59" y="31.5" width="30" height="31" rx="8" ry="8" transform="translate(191.18 94) rotate(-180)"/>
+</svg>
